@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import React, { useState } from "react";
 
-
 // import FlameApp from "./FlameApp.js"
 
 const FlameApp = () => {
@@ -19,36 +18,77 @@ const FlameApp = () => {
   const [input2, setInput2] = useState("");
   const [answer, setAnswer] = useState("");
 
-const imgcheck = (  <div className="bottom">
- <h3 style={{color:"red"}} > ❕ Please Enter Valid Input </h3>
-<img className="gif" src = "https://media.tenor.com/3VRjsijNpDoAAAAj/yaseen.gif" alt=""/>
-</div>)
-const Aafat = (  <div className="bottom">
-   <h3>Aafat 🤭 </h3>
-<img className="gif" src = "https://media.tenor.com/GQD8ybRi2O8AAAAi/mochi-cute.gif" alt=""/>
-</div>)
-const Friends = (  <div className="bottom">
-   <h3>Friends  </h3>
-<img className="gif" src = "https://media.tenor.com/Hm_BP5GWHUIAAAAj/happy.gif" alt=""/>
-</div>)
-const Siblings = (  <div className="bottom">
-   <h3>Siblings </h3>
-<img className="gif" src = "https://media.tenor.com/3evxGIB0_TgAAAAj/canticos-chickie.gif" alt=""/>
-</div>)
+  const imgcheck = (
+    <div className="bottom">
+      <h3 style={{ color: "red" }}> ❕ Please Enter Valid Input </h3>
+      <img
+        className="gif"
+        src="https://media.tenor.com/3VRjsijNpDoAAAAj/yaseen.gif"
+        alt=""
+      />
+    </div>
+  );
+  const Aafat = (
+    <div className="bottom">
+      <h3>Aafat 🤭 </h3>
+      <img
+        className="gif"
+        src="https://media.tenor.com/GQD8ybRi2O8AAAAi/mochi-cute.gif"
+        alt=""
+      />
+    </div>
+  );
+  const Friends = (
+    <div className="bottom">
+      <h3>Friends </h3>
+      <img
+        className="gif"
+        src="https://media.tenor.com/Hm_BP5GWHUIAAAAj/happy.gif"
+        alt=""
+      />
+    </div>
+  );
+  const Siblings = (
+    <div className="bottom">
+      <h3>Siblings </h3>
+      <img
+        className="gif"
+        src="https://media.tenor.com/3evxGIB0_TgAAAAj/canticos-chickie.gif"
+        alt=""
+      />
+    </div>
+  );
 
-const Married = (  <div className="bottom">
-   <h3>Married </h3>
-<img className="gif" src = "https://media.tenor.com/j5HkTUwkjAoAAAAj/sportsmanias-animated-emojis.gif" alt=""/>
-
-</div>)
-const Enemies = (  <div className="bottom">
-   <h3>Enemies </h3>
-<img className="gif" src = "https://media.tenor.com/Dmk0gNMX7P0AAAAi/aliceanimated-alicestickers.gif" alt=""/>
-</div>)
-const Lovers = (  <div className="bottom">
-   <h3>Lovers </h3>
-<img className="gif" src = "https://media.tenor.com/lHhcvy0Zwv0AAAAj/cute-adorable.gif" alt=""/>
-</div>)
+  const Married = (
+    <div className="bottom">
+      <h3>Married </h3>
+      <img
+        className="gif"
+        src="https://media.tenor.com/j5HkTUwkjAoAAAAj/sportsmanias-animated-emojis.gif"
+        alt=""
+      />
+    </div>
+  );
+  const Enemies = (
+    <div className="bottom">
+      <h3>Enemies </h3>
+      <img
+        className="gif"
+        src="https://media.tenor.com/Dmk0gNMX7P0AAAAi/aliceanimated-alicestickers.gif"
+        alt=""
+      />
+    </div>
+  );
+  const Lovers = (
+    <div className="bottom">
+      <h3>Lovers </h3>
+      <img
+        className="gif"
+        src="https://media.tenor.com/lHhcvy0Zwv0AAAAj/cute-adorable.gif"
+        alt=""
+      />
+    </div>
+  );
 
   function clearHandler() {
     setInput1("");
@@ -78,7 +118,7 @@ const Lovers = (  <div className="bottom">
     let ans = uniqueStr.length % 6;
 
     if (str.length === 0) {
-      return setAnswer( imgcheck);
+      return setAnswer(imgcheck);
     }
 
     console.log(ans);
@@ -110,8 +150,8 @@ const Lovers = (  <div className="bottom">
 
   return (
     <>
-    <h1 className="flamegame" >😛 FLAME Game 🎲</h1>
-        
+      <h1 className="flamegame">😛 FLAME Game 🎲</h1>
+
       <div className="main">
         <h2>🖐 Your Name </h2>
         <input
@@ -154,8 +194,7 @@ const Lovers = (  <div className="bottom">
         </div>
         {/* <br> */}
         <h3 data-testid="answer">{answer}</h3>
-{/* <img className="gif" src = "https://media.tenor.com/kMzBmSFsdIEAAAAi/sportsmanias-just-married.gif" alt=""/> */}
-      
+        {/* <img className="gif" src = "https://media.tenor.com/kMzBmSFsdIEAAAAi/sportsmanias-just-married.gif" alt=""/> */}
       </div>
     </>
   );
